@@ -29,12 +29,12 @@ class Card1 extends StatelessWidget {
           Positioned(
               top: 20,
               child:
-                  Text(title, style: FooderlichTheme.darkTextTheme.bodyText1)),
+                  Text(title, style: FooderlichTheme.darkTextTheme.headline2)),
           Positioned(
               bottom: 30,
               right: 0,
               child: Text(description,
-                  style: FooderlichTheme.darkTextTheme.headline5)),
+                  style: FooderlichTheme.darkTextTheme.bodyText1)),
           Positioned(
               bottom: 10,
               right: 0,
