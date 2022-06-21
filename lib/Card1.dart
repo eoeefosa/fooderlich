@@ -27,7 +27,7 @@ class Card1 extends StatelessWidget {
         child: Stack(children: [
           Text(category, style: FooderlichTheme.darkTextTheme.bodyText1),
           Positioned(
-              top: 15,
+              top: 20,
               child:
                   Text(title, style: FooderlichTheme.darkTextTheme.bodyText1)),
           Positioned(
