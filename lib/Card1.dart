@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'fooderlich_theme.dart';
 
 class Card1 extends StatelessWidget {
   const Card1({Key? key}) : super(key: key);
@@ -11,7 +12,7 @@ class Card1 extends StatelessWidget {
     return Center(
       child: Container(
         padding: const EdgeInsets.all(16),
-        constraints: const BoxConstraints.expand(width: 350, height: 500),
+        constraints: const BoxConstraints.expand(width: 350.0, height: 450.0),
         // Box decorator describes how to draw a box
         decoration: const BoxDecoration(
           // decorationImage tell the box to paint an image
@@ -23,6 +24,12 @@ class Card1 extends StatelessWidget {
           // corner radius
           borderRadius: BorderRadius.all(Radius.circular(10.0)),
         ),
+        child: Stack(children: [
+          Text(category, style: FooderlichTheme.darkTextTheme.bodyText1),
+          Text(title, style: FooderlichTheme.darkTextTheme.headline5),
+          Text(description, style: FooderlichTheme.darkTextTheme.bodyText1),
+          Text(chef, style: FooderlichTheme.darkTextTheme.bodyText1),
+        ]),
       ),
     );
   }
