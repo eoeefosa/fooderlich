@@ -15,7 +15,7 @@ class _HomeState extends State<Home> {
     Container(color: Colors.blue),
   ];
 
-  void onItemTapped(int index) {
+  void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
     });
@@ -30,6 +30,8 @@ class _HomeState extends State<Home> {
                 style: Theme.of(context).textTheme.headline1)),
         body: pages[_selectedIndex],
         bottomNavigationBar: BottomNavigationBar(
+          currentIndex: _selectedIndex,
+          onTap: _onItemTapped,
           //to select the selector color when item is tapped
           selectedItemColor:
               Theme.of(context).textSelectionTheme.selectionColor,
