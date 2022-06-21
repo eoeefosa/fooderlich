@@ -24,25 +24,25 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-            title: Text("Fooderlich",
+      appBar: AppBar(
+          title: Text("Fooderlich",
 //theme.of(content) return the nearest theme in the widget tree or app's theme if wigdet tree theme is absent
-                style: Theme.of(context).textTheme.headline1)),
-        body: pages[_selectedIndex],
-        bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _selectedIndex,
-          onTap: _onItemTapped,
-          //to select the selector color when item is tapped
-          selectedItemColor:
-              Theme.of(context).textSelectionTheme.selectionColor,
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-                icon: Icon(Icons.card_giftcard), label: 'Card1'),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.card_giftcard), label: 'Card2'),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.card_giftcard), label: 'Card3'),
-          ],
-        ));
+              style: Theme.of(context).textTheme.headline1)),
+      body: pages[_selectedIndex],
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
+        //to select the selector color when item is tapped
+        selectedItemColor: Theme.of(context).textSelectionTheme.selectionColor,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+              icon: Icon(Icons.card_giftcard), label: 'Card1'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.card_giftcard), label: 'Card2'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.card_giftcard), label: 'Card3'),
+        ],
+      ),
+    );
   }
 }
