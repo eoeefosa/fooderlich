@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'fooderlich_theme.dart';
 
 void main() {
   //1 everything in flutter is a widget runApp takes in the root widget
@@ -10,18 +11,20 @@ class Fooderlich extends StatelessWidget {
   const Fooderlich({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    // TODO: Create theme
-    // TODO: Apply Home widget
+    final theme = FooderlichTheme.dark();
     //3 composing a materialApp widget to give it a material design system look and feel
     return MaterialApp(
-      // TODO: Add theme
+      theme: theme,
       title: 'Fooderlich',
       // 4 scaffold wiget defines the layout and structure of the app
       home: Scaffold(
-        // TODO: Style the title
-        appBar: AppBar(title: const Text('Fooderlich')),
-        // TODO: Style the body text
-        body: const Center(child: Text('Let\'s get cooking 👩‍🍳')),
+        appBar: AppBar(
+          title: Text('Fooderlich', style: theme.textTheme.headline6),
+        ),
+        body: Center(
+          child: Text('Let\'s get cooking 👩‍🍳',
+              style: theme.textTheme.headline1),
+        ),
       ),
     );
   }
