@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fooderlich/Card1.dart';
 import 'package:fooderlich/Card2.dart';
+import 'package:fooderlich/madecard.dart';
 
 //new class extends Statefull widget
 class Home extends StatefulWidget {
@@ -15,6 +16,7 @@ class _HomeState extends State<Home> {
     const Card1(),
     Card2(),
     Container(color: Colors.blue),
+    madeClass()
   ];
 
   void _onItemTapped(int index) {
@@ -43,6 +45,8 @@ class _HomeState extends State<Home> {
               icon: Icon(Icons.card_giftcard), label: 'Card2'),
           BottomNavigationBarItem(
               icon: Icon(Icons.card_giftcard), label: 'Card3'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.card_giftcard), label: 'madecard'),
         ],
       ),
     );
