@@ -21,7 +21,7 @@ class Card2 extends StatelessWidget {
             AuthorCard(
                 authorName: "osemwegie Efosa",
                 title: "Smoothie Connoisseur",
-                imageProvider: AssetImage("assets/me.jpg"))
+                imageProvider: AssetImage("assets/author_katz.jpeg"))
           ],
         ),
       ),

@@ -18,7 +18,20 @@ class AuthorCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16.0),
       child: Row(
-        children: [],
+        children: [
+          CircleImage(
+            imageProvider: imageProvider,
+            imageRadius: 26,
+          ),
+          const SizedBox(width: 8.0),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(authorName, style: FooderlichTheme.lightTextTheme.headline2),
+              Text(title, style: FooderlichTheme.lightTextTheme.headline3),
+            ],
+          )
+        ],
       ),
     );
   }
