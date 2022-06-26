@@ -5,7 +5,6 @@ class madeClass extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        padding: const EdgeInsets.all(8.0),
         constraints: const BoxConstraints.expand(height: 450, width: 350),
         decoration: const BoxDecoration(
             image: DecorationImage(
