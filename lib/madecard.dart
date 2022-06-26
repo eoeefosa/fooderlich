@@ -11,6 +11,13 @@ class madeClass extends StatelessWidget {
             image: DecorationImage(
                 image: AssetImage("assets/sunflex.jpg"), fit: BoxFit.cover),
             borderRadius: BorderRadius.all(Radius.circular(10.0))),
+        child: Container(
+          height: 450,
+          width: 450,
+          decoration: BoxDecoration(
+              color: Colors.black.withOpacity(0.8),
+              borderRadius: const BorderRadius.all(Radius.circular(10.0))),
+        ),
       ),
     );
   }

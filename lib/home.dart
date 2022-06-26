@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fooderlich/Card1.dart';
 import 'package:fooderlich/Card2.dart';
+import 'package:fooderlich/card3.dart';
 import 'package:fooderlich/madecard.dart';
 
 //new class extends Statefull widget
@@ -14,8 +15,8 @@ class _HomeState extends State<Home> {
   int _selectedIndex = 0;
   static List<Widget> pages = <Widget>[
     const Card1(),
-    Card2(),
-    Container(color: Colors.blue),
+    const Card2(),
+    const Card3(),
     madeClass()
   ];
 
