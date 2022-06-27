@@ -17,7 +17,7 @@ class _HomeState extends State<Home> {
     const Card1(),
     const Card2(),
     const Card3(),
-    madeClass()
+    const MadeClass()
   ];
 
   void _onItemTapped(int index) {

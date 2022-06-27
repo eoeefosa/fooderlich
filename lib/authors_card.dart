@@ -39,7 +39,7 @@ class AuthorCard extends StatelessWidget {
             ],
           ),
           IconButton(
-            icon: Icon(Icons.favorite_border),
+            icon: const Icon(Icons.favorite_border),
             iconSize: 30,
             color: Colors.blue[400],
             onPressed: () {
