@@ -46,7 +46,7 @@ class _AuthorCardState extends State<AuthorCard> {
           IconButton(
             icon: Icon(_isFavorited? Icons.favorite : Icons.favorite_border),
             iconSize: 30,
-            color: Colors.blue[400],
+            color: Colors.red[400],
             onPressed: () {
               setState((){
                 _isFavorited=!_isFavorited;
