@@ -4,7 +4,7 @@ import 'package:fooderlich/Card2.dart';
 import 'package:fooderlich/card3.dart';
 import 'package:fooderlich/madecard.dart';
 
-//new class extends Statefull widget
+//new class extends Stateful widget
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
   @override
