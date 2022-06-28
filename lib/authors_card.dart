@@ -44,10 +44,13 @@ class _AuthorCardState extends State<AuthorCard> {
             ],
           ),
           IconButton(
+            // it checks if the user has favorited the recipe card
             icon: Icon(_isFavorited? Icons.favorite : Icons.favorite_border),
             iconSize: 30,
+            // it changes the color to give the app more life
             color: Colors.red[400],
             onPressed: () {
+              //when the user presses the IconButton, it toggles the _isfavorited state via a call to setState()
               setState((){
                 _isFavorited=!_isFavorited;
               }
